@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 section {
-  min-height: 90vh; /* Fill the screen height */
+  min-height: 95vh; /* Fill the screen height */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +75,7 @@ section {
 .hero {
   text-align: center;
   padding: 3rem 1rem;
-  background: #fafafa;
+  
 }
 
 .profile-pic {
@@ -86,14 +86,27 @@ section {
 }
 
 .section {
-  max-width: 900px;
+  max-width: 100%;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0% 20% 0% 20%;
 
 }
 #about {
   text-align: center;
+  color: white;
+  font-size: 1.2em;
+  background: orange;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 0% 20% 0% 20%;
+  background-image: url(/Users/venkatagouthampachava/Downloads/Port/requirments/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 
+
+}
+#projects{
+  padding: 0% 17% 0% 17%;
 }
 
 h2 {
@@ -104,8 +117,8 @@ h2 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 3rem;
 }
 
 .project-card {
@@ -124,7 +137,7 @@ h2 {
 
 .project-card {
   display: block; /* makes entire card clickable */
-  background: #fff;
+  
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
