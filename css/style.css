@@ -208,7 +208,82 @@ footer {
     display: block;
   }
 }
+/*skills list*/
+details {
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid #cbd5e1;
+}
 
+summary {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 16px 20px;
+  cursor: pointer;
+  color: #1e293b;
+  list-style: none;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+summary::marker {
+  display: none;
+}
+
+summary::after {
+  content: '▾';
+  position: absolute;
+  right: 20px;
+  transition: transform 0.3s ease;
+  color: #64748b;
+}
+
+details[open] summary::after {
+  transform: rotate(180deg);
+  color: #2563eb;
+}
+
+summary:hover {
+  background: #e2e8f0;
+}
+
+/* ===== Skills List ===== */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 20px 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.skills-list span {
+  background: #e2e8f0;
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  color: #1e293b;;
+  transition: background 0.3s;
+}
+
+.skills-list span:hover {
+  background: #93c5fd;
+  color: #ffffff;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* end of skills*/
 
 .contact-icons {
   margin-top: 20px;
@@ -231,4 +306,5 @@ footer {
 .contact-icons a:nth-child(2):hover { color: #0a66c2; } /* LinkedIn blue */
 .contact-icons a:nth-child(3):hover { color: #d44638; } /* Email red */
 .contact-icons a:nth-child(4):hover { color: #4CAF50; } 
+
 
